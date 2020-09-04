@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="with-device-width, initial-scale-1.0">
+        <title>Link Crash Itaú - Dashboard</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body onload = "carregarPdv()">
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <div class="card">
+                        <h5 class="card-header"><img class="rounded-circle" src="img/itau.png" width="80px">Link Crash Itaú</h5>
+                        <div class="card-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <form role="form">
+                                            <div class="form-group">
+                                                 
+                                                <label for="lblnometecnico">
+                                                    Nome Técnico
+                                                </label>
+                                                <input type="text" class="form-control" id="txtnometecnico" />
+                                            </div>
+                                            <div class="form-group">
+                                                 
+                                                <label for="lbloperadora">
+                                                    Operadora
+                                                </label>
+                                                <input type="text" class="form-control" id="txtoperadora" />
+                                            </div>
+                                            <div class="form-group">
+                                                 
+                                                <label for="lblcelular">
+                                                    Celular/Whatsapp
+                                                </label>
+                                                <input type="text" class="form-control" id="txtcelular" />
+                                            </div>
+                                            <div class="form-group">
+                                                 
+                                                <label for="lbldocumento">
+                                                    Documento
+                                                </label>
+                                                <input type="text" class="form-control" id="txtdocumento" />
+                                            </div>
+
+                                            <div class="form-group">
+                                                 
+                                                <label for="lblpdv">
+                                                    PDV
+                                                </label>
+                                                <select id="cmbpdv" name="cmbpdv" style="width: 200px;" class="form-control" ></select>
+                                                    
+                                                </div>
+                                            <div class="form-group">
+                                                 
+                                                <label for="lbldata">
+                                                    Data
+                                                </label>
+                                                <input type="date" class="form-control" id="txtdata" />
+                                            </div>
+
+                                            <div class="form-group">
+                                                 
+                                                <label for="lblhora">
+                                                    Hora
+                                                </label>
+                                                <input type="time" class="form-control" id="txthora" />
+                                            </div>
+
+
+                                            
+                                            <button onclick="gravar()" type="button" class="btn btn-primary">
+                                                Enviar
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>                       
+                               
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>
